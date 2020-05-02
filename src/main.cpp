@@ -1,7 +1,8 @@
 #include <Arduino.h>
-#include "SwitchClass.h"
+#include "Switch.h"
 #include "Direction.h"
 
+/*Declarations*/
 Switch* switch1;
 Switch* switch2;
 Switch* switch3;
@@ -15,6 +16,7 @@ Switch* switch10;
 
 void setup()
 {
+    /*Initializations*/
     switch1 = new Switch(A0, A1, 22, 27, 13, 12, RIGHT);
     switch2 = new Switch(A2, A3, 24, 25, 11, 10, RIGHT);
     //switch1 = new Switch(A0, A1, 13, 12, 22, 23, RIGHT);
@@ -49,6 +51,7 @@ void setup()
 
 void loop()
 {
+    /*Check button press*/
     switch1->CheckButtonPress();
     switch2->CheckButtonPress();
     /*switch3->CheckButtonPress();

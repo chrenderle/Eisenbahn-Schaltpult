@@ -1,7 +1,7 @@
 #ifndef SWITCH_CLASS_CPP
 #define SWITCH_CLASS_CPP
 
-#include "SwitchClass.h"
+#include "Switch.h"
 void setRelay(uint8_t);
 
 Switch::Switch(uint8_t rightLed, uint8_t leftLed, uint8_t rightRelay, uint8_t leftRelay, uint8_t rightButton, uint8_t leftButton, DIRECTION defaultDirection) : rightLed(rightLed), leftLed(leftLed), rightRelay(rightRelay), leftRelay(leftRelay), rightButton(rightButton), leftButton(leftButton), defaultDirection(defaultDirection)
