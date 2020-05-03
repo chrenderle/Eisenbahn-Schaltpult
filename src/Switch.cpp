@@ -32,7 +32,7 @@ void Switch::AddLeft(Switch* _switch, DIRECTION direction)
     if (leftSwitchesSize < MAX_EVENT_SWITCHES)
     {
         leftSwitches[leftSwitchesSize] = _switch;
-        leftSwitchesDirection[rightSwitchesSize] = direction;
+        leftSwitchesDirection[leftSwitchesSize] = direction;
         ++leftSwitchesSize;
     }
 }
